@@ -1,0 +1,77 @@
+/* @media Media queries - - - - - - - - - - - - - - - - - - - - */
+
+.respo {
+    clear: none;
+}
+
+.respo:before {
+	z-index:1000;
+	width:auto;
+	bottom:5px;
+	right:5px;
+	position: fixed;
+	padding: 5px;
+	color:#000;
+	font-size: 12px;
+	font-weight: 700;
+	transition: all 1s ease;
+	opacity: 0.8;
+}
+
+.respo:before {
+	content: "(none)";
+	background: cyan;
+}
+
+/* 980px min - Large desktop - - - - - - - - - - */
+
+@media (min-width: 980px) {
+}
+
+/* 980px max - Large desktop - - - - - - - - - - */
+
+@media (max-width: 980px) {
+
+    .respo:before {
+        content: "(max-width: 980px)";
+        background:magenta;
+    }
+
+    html {
+        font-size: 18px;
+    }
+
+
+}
+
+/* 768px max - Landscape phone to portrait tablet - - - - - - - - - - */
+
+@media (max-width: 768px) {
+
+    .respo:before {
+        content: "(max-width: 768px)";
+        background: yellow;
+    }
+
+    html {
+        font-size: 20px;
+    }
+
+}
+
+/* 480px Landscape phones and down - - - - - - - - - - - - - - - - - - - - */
+
+@media (max-width: 480px) {
+
+    .respo:before {
+        content: "(max-width: 480px)";
+        background: grey;
+    }
+
+    html {
+        font-size: 18px;
+    }
+
+}
+
+/* END - - - - - - - - - - - - - - - - - - - - */
